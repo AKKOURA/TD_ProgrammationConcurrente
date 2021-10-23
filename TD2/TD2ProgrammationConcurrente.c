@@ -23,8 +23,14 @@ void *affiche(void *arg ){
 }
 
 int main(){
-  
-    pthread_t id;
+    pthread_t monoTach;
+   
+    //Q1
+    const char *const chaine = "Souvent, pour samuser, les hommes dequipage\nPrennent des goelands, vastes oiseaux des mers,\nQui suivent, indolents compagnons de voyage,\nLe navire glissant sur les gouffres amers.\n";
+    pthread_create(  &monoTach,NULL,affiche,(void*)chaine);
+    pthread_join( monoTach, NULL); 
+
+    //Q2
     pthread_t tache_1;
     pthread_t tache_2;
     pthread_t tache_3;

@@ -1,7 +1,6 @@
-package TD3JAVA;
-
+package TD3.TD3JAVA;
 public class Main {
-    public static void main(String arg[] ) throws InterruptedException {
+    public static void main(String[] arg ) throws InterruptedException {
         IncDec incdec= new IncDec(0);
         Thread t1=new Thread(new TacheInc(incdec));
         t1.start();

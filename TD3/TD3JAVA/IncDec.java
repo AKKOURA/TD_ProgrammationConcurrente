@@ -1,4 +1,4 @@
-package TD3JAVA;
+package TD3.TD3JAVA;
 public class IncDec{
     private int val;
     public IncDec(int val){

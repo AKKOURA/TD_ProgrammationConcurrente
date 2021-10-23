@@ -1,5 +1,4 @@
-package TD3JAVA;
-
+package TD3.TD3JAVA;
 public class TacheDec implements Runnable {
     
     public IncDec incDec;
